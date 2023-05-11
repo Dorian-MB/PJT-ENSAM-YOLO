@@ -1,1 +1,9 @@
 yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8x.pt
+im_test.jpg
+runs
+Cheat-Sheet_GitHub
+.ipynb_checkpoints
+test_webcam.jpg

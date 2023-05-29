@@ -1,9 +1,9 @@
 from ultralytics import YOLO
 
-# Camera prediction
-model = YOLO("models/best_s.pt")
-# model = YOLO("yolov8s.pt")
+# Prediction
+model_path = "models/nano_189epochs_SGD.pt"
+model = YOLO(model_path)
 
-resulte = model.predict(source=0, show=True, verbose=False)
-
-# print(resulte)
+source = "input/video_test_5.mp4"
+# source = 0 # for live detection (webcam needed)
+result = model.predict(source=source, save=True)
